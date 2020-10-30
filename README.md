@@ -12,13 +12,13 @@ python3 occ_order_status_notification.py
 
 ### STATUS
 
-... #### APPROVED
-... #### PENDING
-... #### REJECTED
-... #### REMOVED
-... #### SENT
-... #### DELIVERED
-... #### READY
+*APPROVED
+*PENDING
+*REJECTED
+*REMOVED
+*SENT
+*DELIVERED
+*READY
 
 ### EMAIL TEMPLATE
 ```
