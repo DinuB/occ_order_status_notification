@@ -30,7 +30,7 @@ def get_order():
     headers_getorder = { 
         "Authorization": "Bearer "+accessToken
     }
-    url_order = '/ccadmin/v1/orders/'+orderID
+    url_order = open_env['Url']+'/ccadmin/v1/orders/'+orderID
     global response_order
     req_order = requests.get(url_order, headers=headers_getorder)
     response_order = json.loads(req_order.text)
