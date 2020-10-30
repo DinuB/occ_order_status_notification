@@ -7,7 +7,8 @@ with open('src/env.json', 'r') as json_file:
 
 # define functions
 def listEnv():
-    open_env_user = open_env['UserName']
+    open_env_user = open_env['user_name']
+    open_env_user = open_env['user_email']
     open_env_env = open_env['Url']
     open_env_storefront = open_env['Storefront']
     print('User Name: '+open_env_user+'\nEnvironment: '+open_env_env+' \nStorefront: '+open_env_storefront)

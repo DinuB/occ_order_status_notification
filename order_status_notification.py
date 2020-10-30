@@ -30,13 +30,13 @@ def get_order():
     headers_getorder = { 
         "Authorization": "Bearer "+accessToken
     }
-    url_order = 'https://a7802849c1tst-admin.occa.ocs.oraclecloud.com/ccadmin/v1/orders/'+orderID
+    url_order = open_env['Url']+'/ccadmin/v1/orders/'+orderID
     global response_order
     req_order = requests.get(url_order, headers=headers_getorder)
     response_order = json.loads(req_order.text)
     # print(response_order)
 
-    with open('src/order_'+orderID+'.json', 'w') as json_file:
+    with open('mailsJson/order_'+orderID+'.json', 'w') as json_file:
         json.dump(response_order, json_file, indent=4)
 
     print('ORDER ID: '+response_order['id'])
