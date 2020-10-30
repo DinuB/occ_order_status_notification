@@ -30,7 +30,7 @@ def get_order():
     headers_getorder = { 
         "Authorization": "Bearer "+accessToken
     }
-    url_order = open_env['Url']+'/ccadmin/v1/orders/'+orderID
+    url_order = '/ccadmin/v1/orders/'+orderID
     global response_order
     req_order = requests.get(url_order, headers=headers_getorder)
     response_order = json.loads(req_order.text)
@@ -93,5 +93,3 @@ else:
     get_auth()
 
 
-# https://90d2c6029872d6e80f07c829be178151.m.pipedream.net
-# https://occ-custom-payment-generic.herokuapp.com/v1/payments/generic
