@@ -12,8 +12,8 @@ python3 occ_order_status_notification.py
 
 ### STATUS
 
-*APPROVED
-*PENDING
+* APPROVED
+* PENDING
 *REJECTED
 *REMOVED
 *SENT
